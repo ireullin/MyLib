@@ -6,7 +6,6 @@ Author: Ireul Lin
 Last update: 2014/02/04
 Copyright is owned by UITOX.
 ***************************************************************************************************************/
-
 #ifndef __UITOXPREHEADER__
 #define __UITOXPREHEADER__
 
