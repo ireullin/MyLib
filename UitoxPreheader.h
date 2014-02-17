@@ -14,12 +14,13 @@ Copyright is owned by UITOX.
 #define UITOX_EXPCEPTION_1(param)		Uitox::Exception(param, __FILE__, __LINE__);
 #define UITOX_EXPCEPTION_2(no, msg)		Uitox::Exception(no, msg, __FILE__, __LINE__);
 
-//ddd
-
 #ifndef AUTO_LOCK
 	#define AUTO_LOCK(a)				Uitox::Threading::AutoLock _autolock(a)
 #endif
 
+#ifndef DICTIONARY_FOREACH
+	#define DICTIONARY_FOREACH(a)		for(a.begin(); !a.end(); ++a)
+#endif
 
 #ifndef SAFE_DELETE
 	#define SAFE_DELETE(a)				if( (a) != NULL ) {delete (a); (a) = NULL;}
